@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #ecf8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h2 {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.options {
+  position: relative;
+  top: 50px;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+img {
+  background: transparent;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  mix-blend-mode: darken;
+  z-index: 2;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.results {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.results p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments p {
+  padding: 1%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #001845;
+  display: inline;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+/* Mobile Screen Responsive */
+
+@media screen and (max-width: 576px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .options {
+    width: 100vw;
+    gap: 5px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .results p {
+    font-size: 1.2rem;
+  }
+
+  .comments p {
+    padding: 3%;
+    font-size: 1rem;
+  }
+}
